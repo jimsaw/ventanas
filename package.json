@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build"
+    "postinstall": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build",
+    "heroku-postbuild": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build"
   },
   "private": true,
   "dependencies": {
@@ -58,7 +59,8 @@
     "rxjs": "~6.6.0",
     "rxjs-compat": "^6.5.4",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "express": "*"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1000.3",
