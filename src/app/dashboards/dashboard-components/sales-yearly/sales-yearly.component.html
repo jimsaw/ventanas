@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-content>
+        <!-- column -->
+        <mat-card-title>Sales Yealry</mat-card-title>
+        <mat-card-subtitle>This is the simple example of bar chart</mat-card-subtitle>
+        <div id="chart">
+            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart"
+                [dataLabels]="chartOptions.dataLabels" [plotOptions]="chartOptions.plotOptions"
+                [yaxis]="chartOptions.yaxis" [legend]="chartOptions.legend" [fill]="chartOptions.fill"
+                [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip" [xaxis]="chartOptions.xaxis"
+                [grid]="chartOptions.grid">
+            </apx-chart>
+        </div>
+        <!-- <div class="barchrt" style="height:325px;">
+            <x-chartist class="" [data]="barChart1.data" [type]="barChart1.type" [options]="barChart1.options"
+                [responsiveOptions]="barChart1.responsiveOptions" [events]="barChart1.events"> </x-chartist>
+        </div> -->
+    </mat-card-content>
+</mat-card>
