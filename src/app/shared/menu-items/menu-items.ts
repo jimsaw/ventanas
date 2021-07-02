@@ -26,6 +26,12 @@ export interface Menu {
 
 const MENUITEMS2 = [
     {
+        state: '',
+        name: 'Personal',
+        type: 'saperator',
+        icon: 'av_timer'
+    },
+    {
         state: 'dashboards',
         name: 'Dashboards',
         type: 'sub',
@@ -34,6 +40,18 @@ const MENUITEMS2 = [
             { state: 'inicio', name: 'Inicio', type: 'link' },
             { state: 'alcaldia', name: 'Alcaldia', type: 'link' }
         ]
+    },
+    {
+        state: '',
+        name: 'Forms, Table & Widgets',
+        type: 'saperator',
+        icon: 'av_timer'
+    },
+    {
+        state: '',
+        name: 'Extra Component',
+        type: 'saperator',
+        icon: 'av_timer'
     }
 ]
 
@@ -234,9 +252,10 @@ const MENUITEMS = [
     }
 ];
 
+
 @Injectable()
 export class MenuItems {
     getMenuitem(): Menu[] {
-        return MENUITEMS;
+        return MENUITEMS2;
     }
 }
